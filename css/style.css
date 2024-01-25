@@ -5,6 +5,14 @@
   text-decoration: none;
   list-style: none;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+
+  top:0;
+}
+
 main {
 display: flex;
 flex-direction: column;
