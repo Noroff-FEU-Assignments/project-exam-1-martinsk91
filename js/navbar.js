@@ -11,7 +11,7 @@ function displayMenu(){
         icon1.classList.add("rotated1");
         icon2.classList.add("rotated2");
         icon3.classList.add("rotated3");
-        console.log("works");
+    
     }
 
     else {
@@ -19,9 +19,9 @@ function displayMenu(){
         icon1.classList.remove("rotated1");
         icon2.classList.remove("rotated2");
         icon3.classList.remove("rotated3");
-        console.log("works");
+     
     }
 }
 
-console.log(icon1);
+
 menu.addEventListener('click', displayMenu)
