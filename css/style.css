@@ -41,7 +41,7 @@ header, footer {
 }
 
 /* dark text */
-.example 
+a 
 {
   color: var(--dark);
 }
@@ -218,6 +218,25 @@ justify-content: center;
   color: white;
   font-size: 2em;
   background-color: rgba(48, 47, 47, 0.6);
+}
+/* specific page */
+.post-image
+{
+  width: 300px;
+}
+
+.post-image img 
+{
+  width: 100%;
+  border-radius: 10%;
+}
+
+.post-grid 
+{
+  display: flex;
+  gap:50px;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* about page */

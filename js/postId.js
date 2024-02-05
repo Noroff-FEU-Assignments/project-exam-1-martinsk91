@@ -2,7 +2,7 @@
 
 
 
-export async function createId(){
+ async function createId(){
     const queryString = document.location.search;
 
     const params = new URLSearchParams(queryString);
@@ -16,7 +16,8 @@ export async function createId(){
 
 import { fetchPost } from "./post.js";
 import { url } from "./post.js";
+import { testurl } from "./post.js";
 const id = await createId();
-const specificUrl = url + "/" + id;
-
+const specificUrl = url + "/" + id + "?acf_format=standard";
+console.log(specificUrl);
 export const specificPost = await fetchPost(specificUrl); 
