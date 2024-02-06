@@ -23,7 +23,7 @@ function renderspecific() {
  
 
 }
-
+console.log(ingredientsString);
 
 
 
