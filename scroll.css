@@ -1,0 +1,18 @@
+.outside {
+    display: flex;
+}
+
+
+.scrollable-container {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    overflow-x: scroll;
+  }
+  
+  .scrollableContent {
+    padding: 10px;
+    white-space: nowrap;
+    display: inline-block; /* Allows content to overflow horizontally */
+  }
