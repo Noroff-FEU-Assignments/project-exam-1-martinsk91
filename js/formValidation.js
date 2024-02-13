@@ -10,7 +10,7 @@ const messageParagraph = document.getElementById("#messagep");
 
 
 function validateEmail(email) {
-    // Regular expression for basic email format validation
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
@@ -51,8 +51,8 @@ function validateForm() {
 }
 
 submit.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent form submission for demonstration
+    event.preventDefault();
     if (validateForm()) {
-        alert("Thank You! we have recived your email"); // Replace with actual form submission logic
+        alert("Thank You! we have recived your email"); 
     }
 });

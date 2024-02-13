@@ -1,16 +1,15 @@
-const rightButton = document.querySelector(".rightbutton");
-const leftButton = document.querySelector(".leftbutton");
-const scrollableContent = document.querySelector(".scrollableContent");
+const gallery = document.querySelector(".carouselle");
+const right = document.querySelector("#right");
+const left = document.querySelector("#left");
 
-function scrollLeft() {
-    scrollableContent.scrollLeft -= 250; // Move left by 250px
-    console.log("Scrolling left by 250px");
-}
 
-function scrollRight() {
-    scrollableContent.scrollLeft += 250 ; // Move right by 250px
-    console.log("Scrolling right by 250px");
-}
+right.addEventListener('click', ()=>{
+    gallery.style.scrollBehavior = "smooth";
+    gallery.scrollLeft +=320;
+})
 
-rightButton.addEventListener('click', scrollRight);
-leftButton.addEventListener('click', scrollLeft);
+
+left.addEventListener('click', ()=>{
+    gallery.style.scrollBehavior = "smooth";
+    gallery.scrollLeft -=320;
+})

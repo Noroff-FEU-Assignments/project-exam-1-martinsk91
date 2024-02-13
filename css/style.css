@@ -186,6 +186,9 @@ min-width: 150px;
 .home-info
 {
   width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 15px;
 }
 .post-container
 {
@@ -199,7 +202,7 @@ min-width: 150px;
   max-width: 80%;
 }
 
-.post-card img {
+.post-card img, .carouselle div img {
   border-radius: 20px;
   width: 100%;
 }
@@ -230,13 +233,26 @@ justify-content: center;
   opacity: 0.5;
 }
 
+.carouselle {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1020px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.arrow {
+  display: none;
+}
 /* blog page */
 
 .showbutt {
   border-radius: 20px;
   margin: 20px;
 }
-.arrow-left, .arrow-right, .showbutt, #submit
+.arrow-left, .arrow-right, .showbutt, #submit, .post-image
 {
   cursor: pointer;
 }
@@ -345,7 +361,8 @@ form p {
 .post-card, .home-info
 {
 width: 500px;
-margin:50px
+margin:50px;
+font-size: 20px;
 }
 
 .header-img-div 
@@ -359,6 +376,40 @@ margin:50px
 {
   width: auto;
 }
+.carouselle {
+  width: 600px;
+  display: flex;
+  overflow-x: scroll;
+  overflow: hidden;
+  flex-direction: row;
+  height: auto;
+}
+.carouselle div {
+  width: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:20px;
+  padding: 10px;
+  flex:none;
+}
+.carouselle div img{
+  width: 100%;
+}
+.arrow {
+  display: inline;
+  font-size: 50px;
+  color:black;
+}
+.gallery-wrap{
+  margin:10% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+
+
+
 
 }
 
@@ -381,7 +432,7 @@ margin:50px
   grid-template-columns:repeat(3, auto);
   grid-template-rows:1;
   width: 1150px;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: transform 0.5s ease;
 }
 
@@ -509,6 +560,39 @@ height: 250px; */
   grid-row: 1;
   grid-column: 2;
 }
+
+.carouselle {
+  width: 960px;
+  display: flex;
+  overflow-x: scroll;
+  overflow: hidden;
+  flex-direction: row;
+  height: auto;
+}
+.carouselle div {
+  width: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:20px;
+  padding: 10px;
+  flex:none;
+}
+.carouselle div img{
+  width: 100%;
+}
+.arrow {
+  display: inline;
+  font-size: 50px;
+  color:black;
+}
+.gallery-wrap{
+  margin:10% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+
 
 } 
 
