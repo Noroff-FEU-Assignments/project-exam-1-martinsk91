@@ -16,6 +16,7 @@ function renderPosts() {
 
 
 function renderMore(){
+    button.classList.add('hide')
     postContainer.innerHTML="";
     for(let i = 0; i < post.length; i++){
         postContainer.innerHTML += `<a href="specific.html?id=${post[i].id}/" class="centertag"><div class="post-card"><img src="${post[i].acf.image}"><h2>${post[i].acf.title}</h2>     </div></a>`
