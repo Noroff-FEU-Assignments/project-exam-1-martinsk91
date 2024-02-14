@@ -291,6 +291,39 @@ h2 {
   text-align: center;
 }
 
+/* modal */
+.overlay
+{
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  cursor: pointer;
+}
+.modal 
+{
+  display: flex;
+  background-color: #fefefe;
+  /* margin: 15% auto; */
+  /* padding: 20px; */
+  /* border: 1px solid #888; */
+  width: 80%;
+  position: fixed;
+  justify-content: center;
+  margin-top: 5%;
+  box-sizing: border-box;
+  max-width: 650px;
+  display: none;
+}
+.modal img 
+{
+  width: 100%;
+}
+.dispaly
+{
+  display: block;
+}
 /* about page */
 
 

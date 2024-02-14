@@ -4,6 +4,7 @@ const ingredients = document.querySelector(".ingredients");
 const heading = document.querySelector("h1");
 const img = document.querySelector(".post-image");
 const instructions = document.querySelector(".instructions");
+const modal = document.querySelector(".modal");
 let ingredientsString = specificPost.acf.ingredients;
 let ingredientsArray = ingredientsString.split('\n');
 let instructionsString = specificPost.acf.instructions;
@@ -11,6 +12,7 @@ let instructionsArray = instructionsString.split('\n')
 
 
 function renderspecific() {
+    modal.innerHTML+=`<img src="${specificPost.acf.image}">`
     img.innerHTML +=`<img src="${specificPost.acf.image}">`
     heading.innerHTML+= `${specificPost.acf.title}`
     ingredientsHeading.innerHTML += `${specificPost.acf.ingredients_title}`
