@@ -127,7 +127,7 @@ width: 260px;
 
 
       
-      .hidden, .navigate-arrows, .hide {
+      .hidden, .navigate-arrows, .hide, .arrow, .overlay, .modal {
          display: none;
         }
       
@@ -136,7 +136,7 @@ width: 260px;
 
 /* all display flex  */
 nav, .headerdiv, header, footer, footer div, .about-card, .post-card, .post-container, .centertag,
- .section-1, main, .header-img-div, .carouselle, .sortingButtons  {
+ .section-1, main, .header-img-div, .carouselle, .sortingButtons, .post-grid  {
   display: flex;
 }
 
@@ -196,7 +196,7 @@ min-width: 150px;
 {
   margin-top: 50px;
 }
-.home-info, .post-container {
+.home-info, .post-container, .carouselle {
   margin-bottom: 50px;
 }
 
@@ -259,21 +259,21 @@ min-width: 150px;
   /* display: flex;
   flex-direction: column;
   align-items: center; */
-  height: 1020px;
+  /* height: 1020px; */
   overflow: hidden;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
-.arrow {
+/* .arrow {
   display: none;
-}
+} */
 /* blog page */
 
 .showbutt {
   /* border-radius: 20px; */
   margin: 20px;
 }
-.arrow-left, .arrow-right, .showbutt, #submit, .post-image, .hamburger, button
+.arrow-left, .arrow-right, .showbutt, #submit, .post-image, .hamburger, button, .overlay
 {
   cursor: pointer;
 }
@@ -308,7 +308,7 @@ width: 200px;
 
 .post-grid 
 {
-  display: flex;
+  /* display: flex; */
   gap:50px;
   flex-direction: column;
   align-items: center;
@@ -335,8 +335,8 @@ h1, h2 {
   /* width: 100%; */
   height: 100vh;
   position: fixed;
-  display: none;
-  cursor: pointer;
+  /* display: none; */
+  /* cursor: pointer; */
 }
 .modal 
 {
