@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sansita+One" />
     <script defer type="module" src="/js/navbar.js"></script>
     <script defer type="module" src="/js/renderposts.js"></script>
+    <script defer type="module" src="/js/rendersort.js"></script>
     <!-- Hotjar Tracking Code for https://project-exam-martin-s.netlify.app/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -40,10 +41,19 @@
          </nav>
     </header>
     <main>
-        <div class="post-container"></div>
-       
-        <button class="showbutt">show more</button>
-  
+                <div class="sortingButtons">
+                    <h2>sort blog posts</h2>
+                    <button class="showbuttons">Sort posts</button>
+                    <button class="sortA hide">sort by name (A-Z)</button>
+                    <button class="sortZ hide">sort by name (Z-A)</button>
+                    <button class="sortNew hide">sort by Date(new - old)</button>
+                    <button class="sortOld hide">sort by Date (old - new)</button>
+                </div>
+                <h1>Blog posts</h1>
+                <div class="post-container"></div>
+            <button class="showbutt render">show more</button>
+        
+
     </main>
 
     <footer>

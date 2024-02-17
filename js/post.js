@@ -1,5 +1,5 @@
 // export const = endpoint ="?acf_format=standard"
-   export const testurl = "https://project-exam.martinskaarer.no/wp-json/wp/v2/posts?acf_format=standard"
+  
 export const url = "https://project-exam.martinskaarer.no/wp-json/wp/v2/posts";
 const endpoint = "?acf_format=standard&per_page=50"
 

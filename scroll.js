@@ -1,15 +1,15 @@
-const gallery = document.querySelector(".carouselle");
+const carouselle = document.querySelector(".carouselle");
 const right = document.querySelector("#right");
 const left = document.querySelector("#left");
 
 
 right.addEventListener('click', ()=>{
-    gallery.style.scrollBehavior = "smooth";
-    gallery.scrollLeft +=320;
+    carouselle.style.scrollBehavior = "smooth";
+    carouselle.scrollLeft +=320;
 })
 
 
 left.addEventListener('click', ()=>{
-    gallery.style.scrollBehavior = "smooth";
-    gallery.scrollLeft -=320;
+    carouselle.style.scrollBehavior = "smooth";
+    carouselle.scrollLeft -=320;
 })
