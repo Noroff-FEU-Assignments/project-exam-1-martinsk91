@@ -376,6 +376,14 @@ form p {
 #message {
   height: 200px;
 }
+
+.test 
+{
+  width: 150px;
+}
+.test img {
+  width: 100%;
+}
 @media (min-width: 650px){
 
 /* display flex  */
