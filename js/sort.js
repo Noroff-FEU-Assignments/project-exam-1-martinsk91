@@ -18,9 +18,7 @@ export function sortAlphabetic(value1, value2){
     
         return 0;
     })
-    for(let i = 0; i < post.length; i++){
-        // console.log(post[i].acf.title);
-    }
+ 
      
 }
 

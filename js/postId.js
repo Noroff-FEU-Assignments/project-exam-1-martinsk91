@@ -19,5 +19,5 @@ import { url } from "./post.js";
 
 const id = await createId();
 const specificUrl = url + "/" + id + "?acf_format=standard";
-console.log(specificUrl);
+
 export const specificPost = await fetchPost(specificUrl); 

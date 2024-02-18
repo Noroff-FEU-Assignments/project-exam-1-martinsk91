@@ -11,7 +11,7 @@ const postContainer =document.querySelector(".post-container");
 const toggleButton = document.querySelector(".showbuttons");
 
 toggleButton.addEventListener('click', ()=> {
-    console.log("works");
+ 
     if(sortButtonA.classList.contains('hide')){
         sortButtonA.classList.remove('hide');
         sortButtonZ.classList.remove('hide');

@@ -1,6 +1,8 @@
 @import url(_variabels.css);
 
 
+
+
 * {
   text-decoration: none;
 
@@ -13,6 +15,7 @@ header {
   position: sticky;
   top:0;
   min-height: 70px;
+  z-index: 1;
 
 }
 
@@ -20,6 +23,10 @@ main {
 
   min-height: 750px;
 }
+footer li {
+  list-style: none;
+} 
+
 
 /* dark background color */
 header, footer, #submit, .showbutt, .sortA, .sortZ, .showbuttons, .sortNew, .sortOld {
@@ -57,7 +64,7 @@ height: 50px;
 
 }
 /* 25px font size */
-nav a, .about
+nav a, h1
 {
 font-size: 25px;
 }
@@ -92,10 +99,13 @@ width: 260px;
    .carouselle div img, .showbutt {
     border-radius: 20px;
   }
-
+  .icon1, .icon2, .icon3, li span 
+  {
+    display: block;
+  }
     .icon1, .icon2, .icon3 {
      
-      display: block;
+      /* display: block; */
       width: 50px;
       height: 7px;
   
@@ -131,15 +141,15 @@ width: 260px;
 
 
 /* all display flex  */
-nav, .headerdiv, header, footer, footer div, .about-card, .post-card, .post-container, .centertag,
- .section-1, main, .header-img-div, .carouselle, .sortingButtons, .post-grid, .formdiv, .formdiv div  {
+nav, .headerdiv, header, footer, footer div, .about-card, .post-card, .post-container, .post-container a,
+ .section-1, main, .header-img-div, .carouselle, .sortingButtons, .post-grid, .formdiv, .formdiv div, .about-text  {
   display: flex;
 }
 
 
 /* column direction */
 nav, header, footer div, .about-card, .post-card, .post-container,
-main, .section-1, .carouselle, .sortingButtons, .formdiv, .post-grid, .formdiv div
+main, .section-1, .carouselle, .sortingButtons, .formdiv, .post-grid, .formdiv div, .post-container a, .about-text
  {
 
   flex-direction: column;
@@ -151,18 +161,18 @@ footer, .flogos
   flex-direction: row;
 }
 /* flex center */
-nav, header, footer div, .post-container, .centertag, .header-img-div, .post-grid, .modal
+nav, header, footer div, .post-container, .post-container a, .header-img-div, .post-grid, .modal, .about-text
 {
   justify-content: center;
  
 }
 /* flex space-between */
-footer, .flogos {
+footer {
   justify-content: space-between;
 }
 
 /* flex space-around */
-.flogos, footer
+ footer
 {
   justify-content: space-around;
 }
@@ -170,7 +180,7 @@ footer, .flogos {
 
 /* align items center*/
 nav, header, footer, .post-container, .post-card,
-.carouselle, .section-1, main, .header-img-div, .formdiv
+.carouselle, .section-1, main, .header-img-div, .formdiv, .post-container a
  {
   
   align-items:center ;
@@ -186,7 +196,10 @@ footer {
  {
 min-width: 150px;
   }
-
+.flogos 
+{
+  gap:10px;
+}
 /* home page */
 .post-container, h1
 {
@@ -238,8 +251,8 @@ min-width: 150px;
 }
 
 .header-img-div h1{
-  /* color: white; */
-  font-size: 2em;
+
+  
   background-color: rgba(48, 47, 47, 0.6);
   padding:10px;
 }
@@ -268,9 +281,10 @@ min-width: 150px;
 {
 margin-top: 20px;
 width: 80%;
-align-items: flex-end;
-gap: 2px;
-height: 250px;
+align-items: center;
+/* gap: 2px; */
+height: 50px;
+z-index: 1;
 
 }
 .sortA, .sortZ, .showbuttons, .sortNew, .sortOld
@@ -279,6 +293,8 @@ width: 200px;
   padding: 10px 0px 10px 0px;
   border-radius: 0;
   border:0;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 /* specific page */
 .post-image img 
@@ -324,14 +340,18 @@ h1, h2 {
   width: 80%;
   margin-top: 5%;
   max-width: 650px;
-  display: none;
+  /* display: none; */
 }
 
 /* about page */
+.about-card, .about-text-2
+{
+  width: 500px; 
+  max-width: 80%;
+  padding:20px
+}
 .about-card
 {
-  width: 500px;
-  max-width: 80%;
   border-radius: 20px;
   margin-top: 50px;
 }
@@ -384,6 +404,30 @@ form p {
 .test img {
   width: 100%;
 }
+
+.post-card img:hover
+{
+
+  box-shadow: 6px 6px 14px 2px rgba(0,0,0,0.53);
+}
+
+
+ .post-container a:hover
+{
+  transform: scale(1.1);
+  transition: all 1s;
+ 
+  
+}
+.post-card img 
+{
+  box-shadow: 6px 6px 19px 0px rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in;
+}
+
+
+
+
 @media (min-width: 650px){
 
 /* display flex  */
@@ -444,8 +488,9 @@ font-size: 20px;
 }
 
    @media (min-width: 1200px){
-    h1 {
+    h1:not(.spec-h1) {
       font-size: 50px;
+     
     }
     
     .active 
@@ -518,7 +563,7 @@ header, nav, .row {
   justify-content: space-between;
  }
 
-nav, footer 
+nav
 {
   justify-content: space-around;
 }
@@ -610,9 +655,7 @@ height: 250px;
   align-items: center;
   }
 
-  .sortingButtons {
-    width: 800px;
-  }
+
 
 } 
 

@@ -12,7 +12,8 @@ let instructionsArray = instructionsString.split('\n')
 
 
 function renderspecific() {
-    modal.innerHTML+=`<img src="${specificPost.acf.image}">`
+  document.title = specificPost.acf.title;
+    modal.innerHTML+=`<img src="${specificPost.acf.image}" alt="image of ${specificPost.acf.title}">`
     img.innerHTML +=`<img src="${specificPost.acf.image}">`
     heading.innerHTML+= `${specificPost.acf.title}`
     ingredientsHeading.innerHTML += `${specificPost.acf.ingredients_title}`
@@ -25,7 +26,7 @@ function renderspecific() {
  
 
 }
-console.log(ingredientsString);
+
 
 
 
