@@ -32,7 +32,7 @@ Visit website <a href="https://project-exam-martin-s.netlify.app/">here</a>
  Clone the repo:
 
 ```bash
-git clone (https://github.com/Noroff-FEU-Assignments/project-exam-1-martinsk91)
+git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-martinsk91
 ```
 
 
